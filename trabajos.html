@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poda a domicilio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="javascript.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="iconos-header"><a style="text-decoration:none; color: black;" href="index.html"><img class="logo" src="posibles imagenes/logo.png" alt="Logo del emprendimiento" ><h1 class="titulo1"><b>Poda y jardinería a domicilio</b></h1></a>
+              <a href="contactanos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="margin-right: 130px;">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg></a>
+              <a href="" onclick="instagram()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg></a>
+              <a href="https://api.whatsapp.com/send?phone=3364306355" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+              </svg></a>
+            </div>
+        <nav class="navegacion">
+          <a href="index.html" style="text-decoration:none; color: black;"><b class="bloquenav">Inicio</b></a>
+          <a href="trabajos.html" style="text-decoration:none; color: black;"><b class="bloquenav">Trabajos</b></a>
+          <a href="quienes-somos.html" style="text-decoration:none; color: black;"><b class="bloquenav">¿Quiénes somos?</b></a>
+          <a href="contactanos.html" style="text-decoration:none; color: black;"><b class="bloquenav">Contáctanos</b></a>
+        </nav>
+    </header> 
+    <div class="ubicacion">
+    <main id="maintrabajos">
+      <h1 id="h1trabajos">Te mostramos y contamos un poco de lo que hacemos:</h1>
+    <article class="articulo">
+
+      <section class="seccion">
+        <div class="carruselltrabajos1">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="posibles imagenes/fotos trabajo 1/foto1a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 1/foto2a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 1/foto3a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 1/foto4a.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        </div>
+        <p class="ptrabajos">En este primer caso nos encontramos con un patio relativamente mediano, ocupado con muchas palmeras y arbustos. 
+          El cliente nos cuenta que las palmeras estaban llenas de hojas secas y le hacía mucha basura y los frutos atraían muchas abejas, 
+          además de que los arbustos habían perdido su forma homogénea.</p>
+        <p class="ptrabajos">Despues de trabajarlo, conseguimos que vuelva a tener el patio arreglado.</p> 
+      </section>
+
+      <section class="seccion">
+        <div class="carruselltrabjos2">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="posibles imagenes/fotos trabajo 2/foto1a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 2/foto2a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 2/foto3a.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        </div>
+        <p class="ptrabajos">En este ejemplo vemos un patio con muchas enredaderas y arbustos. Un trabajo más sencillo, de redondeo y dejar todo bien prolijo.</p>
+        <p class="ptrabajos">Mucho trabajo a mano con tijera y también con la cortadora de cercos.</p>
+      </section>
+
+      <section class="seccion">
+        <div class="carruselltrabajos3">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="posibles imagenes/fotos trabajo 3/foto1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 3/foto2.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        </div>
+        <p class="ptrabajos">Tres palmeras en un patio relativamente pequeño es igual a mucha basura de hojas secas, cáscaras de las hojas y frutos. 
+          El cliente nos llama para hacer una buena y necesaria limpieza.</p>
+        <p class="ptrabajos">Le recomendamos la extracción de una de las palmeras para mejorar el crecimiento de las otras dos y facilitar su mantenimiento.</p>
+      </section>
+
+      <section class="seccion">
+        <div class="carruselltrabjos4">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="posibles imagenes/fotos trabajo 4/foto1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 4/foto2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 4/foto3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 4/foto4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="posibles imagenes/fotos trabajo 4/foto5.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        </div>
+        <p class="ptrabajos">Vemos una extración de emergencia de un pino. El cliente nos cuenta que las raices del pino le levantó el piso del quincho que se 
+          puede ver atrás rompiendo el caño de gas que va a la cocina.</p>
+        <p class="ptrabajos">Una lástima porque era una especie muy sana y jóven. Buen caso para recordarles lo importante que es elegir bien qué especie de 
+          planta van a poner en su patio y dónde para evitar esos problemas.</p>
+      </section>
+
+    </article>
+    </main>
+  </div>
+    <footer>
+      <h1 class="copyright">Copyright © 2022 Iván Ramírez</h1>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

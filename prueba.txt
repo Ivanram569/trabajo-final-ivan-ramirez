@@ -1,0 +1,10 @@
+<header>
+    <div href="index.html"><img class="logo" src="posibles imagenes/logo.png" alt="Logo del emprendimiento" ><b class="titulo">Poda a domicilio</b></div>
+    <nav class="nav">
+      <a class="bloquenav" href="index.html">Inicio</a> 
+      <a class="bloquenav" href="">Trabajos</a>
+      <a class="bloquenav" href="">¿Quiénes somos?</a>
+      <a class="bloquenav" href="">Contáctanos</a>
+    </nav>
+   
+</header> 
